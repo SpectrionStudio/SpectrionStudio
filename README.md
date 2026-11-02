@@ -1,4 +1,4 @@
-<img width="1200" height="520" alt="image" src="https://github.com/user-attachments/assets/98b28fe5-6c00-4cd9-a39b-675bcae1064e" />
+
 
 
 # Kylian Luangraj — Radar de compétences
