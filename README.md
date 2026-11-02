@@ -1,56 +1,88 @@
-<p align="center">
-  <img src="./assets/banner.svg" alt="Kylian Luangraj, étudiant en BTS SIO option SLAM, développement d'applications">
-</p>
+<div align="center">
+  <img src="assets/spectrion-banner.svg" alt="Spectrion Studio — Kylian Luangraj" width="100%" />
+  <br />
+  <a href="https://spectrionstudio.github.io/portfolio/">PORTFOLIO</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/kylianluangraj/">LINKEDIN</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:kylian.luangraj@outlook.fr">CONTACT</a>
+</div>
 
-<p align="center">
-  <a href="https://spectrionstudio.github.io/portfolio/"><b>Portfolio</b></a> ·
-  <a href="https://www.linkedin.com/in/kylianluangraj/">LinkedIn</a> ·
-  <a href="mailto:kylian.luangraj@outlook.fr">E-mail</a>
-</p>
+<br />
 
----
+> Un bot qui a sa personnalité. Un site qui a son univers. Un jeu qui a ses propres règles. C’est le genre de projets qui me donne envie de coder.
 
-### 🔴 En deux mots
+Moi, c’est **Kylian**. Je suis étudiant en **BTS SIO — SLAM au CNED**. Je m’intéresse au développement d’applications, à l’interactivité et au game design.
 
-Je suis étudiant en BTS SIO option SLAM au CNED, après une année de BUT MMI à Béziers. Je code parce que c'est l'endroit où je peux rendre réel ce que j'imagine, sans limite. Mon objectif : devenir développeur, puis chef de projet informatique.
-
-> **🔎 En recherche d'un stage en développement d'applications** : 4 à 5 semaines, entre mai et août 2027.
-
----
-
-### 🔴 Mon parcours
-
-- **2026 →** BTS SIO option SLAM, CNED (à distance)
-- **2025 – 2026** BUT MMI, Béziers
-- **2024 – 2025** Baccalauréat général, Pézenas
+<div align="center">
+  **STAGE EN DÉVELOPPEMENT** · 4 à 5 semaines · Mai — Août 2027
+</div>
 
 ---
 
-### 🔴 Ce que j'ai construit
+## Sur l’établi
 
-- 🤖 **[discord-bot](https://github.com/SpectrionStudio/discord-bot)** : un bot de modération pour mon serveur (bannissements, mutes, avertissements, anti-raid), avec une IA d'assistance branchée grâce à Ollama. `Python` `discord.py`
-- 🌐 **[portfolio](https://github.com/SpectrionStudio/portfolio)** : mon portfolio, écrit en HTML, CSS et JavaScript et publié sur GitHub Pages. [Le voir en ligne](https://spectrionstudio.github.io/portfolio/)
-- 🏛️ **[les-halles-de-beziers](https://github.com/SpectrionStudio/les-halles-de-beziers)** : une SAE du BUT MMI, le site des Halles de Béziers avec une visite à 360°, habillé comme la tablette Sheikah de *Zelda : Breath of the Wild*. Inachevé, mais ce qu'il m'a appris sur la gestion du temps n'est pas près de s'oublier.
-- ⚔️ **[rpg-prototype-python](https://github.com/SpectrionStudio/rpg-prototype-python)** : un prototype de RPG en 2D. `Python`
-- 🎮 **[mini-jeu-deplacement](https://github.com/SpectrionStudio/mini-jeu-deplacement)** : mon tout premier petit jeu, fait en NSI au lycée. `JavaScript`
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>01 / SPECTRION BOT</h3>
+      <p>Un bot Discord développé pour une communauté : modération, commandes utiles et assistant local.</p>
+      <p><code>/ask</code> pour discuter · <code>/lore</code> pour explorer un univers narratif, avec Ollama en local.</p>
+      <sub>Python · discord.py · Ollama</sub>
+      <br /><br />
+      <a href="https://github.com/SpectrionStudio/discord-bot">VOIR LE DÉPÔT ↗</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>02 / LES HALLES DE BÉZIERS</h3>
+      <p>Une vitrine web imaginée comme une tablette Sheikah, avec une visite des lieux à 360°.</p>
+      <p>Un projet où l'identité visuelle et l'interaction comptent autant que les pages elles-mêmes.</p>
+      <sub>HTML · CSS · JavaScript</sub>
+      <br /><br />
+      <a href="https://spectrionstudio.github.io/les-halles-de-beziers/">VOIR LE SITE ↗</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/SpectrionStudio/les-halles-de-beziers">CODE ↗</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>03 / RPG PROTOTYPE</h3>
+      <p>Un prototype collaboratif de RPG en Python : personnages, statistiques, premiers objets et une mécanique maison autour du « Spectrion ».</p>
+      <p><em>Une base expérimentale, pas encore un jeu jouable.</em></p>
+      <sub>Python · Aseprite · Krita</sub>
+      <br /><br />
+      <a href="https://github.com/SpectrionStudio/rpg-prototype-python">VOIR LE DÉPÔT ↗</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>04 / MON PORTFOLIO</h3>
+      <p>Un aperçu de mon parcours, de mes compétences et des réalisations que je construis au fil de ma formation.</p>
+      <p><em>Le point d'entrée pour découvrir mon travail.</em></p>
+      <sub>HTML · CSS · JavaScript</sub>
+      <br /><br />
+      <a href="https://spectrionstudio.github.io/portfolio/">VISITER LE PORTFOLIO ↗</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🔴 Mes outils
+## Mon terrain de jeu
 
-| | |
-|---|---|
-| **Langages** | Java · HTML / CSS · JavaScript · Python · SQL |
-| **Outils** | Git · GitHub · MySQL · Unity · Visual Studio Code |
-| **Systèmes** | Windows · Linux (notions) |
-| **Méthodes** | Gestion de projet agile · UX/UI · accessibilité · responsive design |
+`Python` &nbsp; `JavaScript` &nbsp; `HTML / CSS` &nbsp; `SQL` &nbsp; `Java`
 
----
+`Git / GitHub` &nbsp; `MySQL` &nbsp; `Unity` &nbsp; `VS Code`
 
-### 🔴 En dehors du code
+J'apprends, je teste, je casse parfois — puis je comprends pourquoi. C'est aussi pour ça que je garde ici des projets à différents stades, des premières expérimentations aux réalisations plus abouties.
 
-✍️ J'écris un roman (Light Novel) depuis plusieurs années, c'est de là que vient mon imagination · 📺 Je crée du contenu (YouTube, Twitch) et je monte mes vidéos · 🎮 Je joue beaucoup, en regardant comment les jeux sont construits · 🏅 Football, handball, baseball, natation, musculation · 🎤 Chant et karaoké
+## En dehors du code
+
+J’écris un light novel et développe un univers narratif depuis plusieurs années. Ça nourrit naturellement mon intérêt pour le game design, les systèmes de jeu et les expériences qui racontent quelque chose.
 
 ---
 
-<p align="center"><i>Partager mes valeurs et rester bienveillant, c'est ma devise.</i></p>
+<div align="center">
+  **Une idée à construire ou un projet à discuter ?**
+  <br />
+  <a href="mailto:kylian.luangraj@outlook.fr">ÉCRIS-MOI ↗</a>
+  <br /><br />
+  <sub>Conçu et codé par Kylian Luangraj · Spectrion Studio</sub>
+</div>
