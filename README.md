@@ -5,7 +5,7 @@
 
 # Kylian Luangraj — Radar de compétences
 
-Bannière statique réalisée en HTML, CSS et SVG. Aucun JavaScript, framework ou dépendance.
+Bannière statique réalisée en HTML, CSS et SVG. Aucun JavaScript, framework ou dépendance. Elle ne représente que mon niveau actuel que je développerai par divers projets dans le futur pour m'améliorer.
 
 ## Aperçu local (à faire plus tard)
 Ouvre `index.html` dans un navigateur qui est la bannière ci-dessus mais interactive.
