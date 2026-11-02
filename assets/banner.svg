@@ -1,51 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="titre desc">
-  <title id="titre">Kylian Luangraj</title>
-  <desc id="desc">Étudiant en BTS SIO option SLAM, développement d'applications. Donner vie à mes idées à travers l'informatique.</desc>
-  <style>
-    text{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
-    .eyebrow{font-size:16px;font-weight:600;letter-spacing:3px;fill:#e8352f}
-    .nom{font-size:68px;font-weight:700;letter-spacing:-1px;fill:#f1f0ee}
-    .sous{font-size:26px;fill:#8a8886}
-    .accroche{font-size:22px;fill:#f1f0ee}
-    .label{font-size:15px;fill:#8a8886}
-    .point{animation:pulse 2.6s ease-in-out infinite}
-    .barre{transform-box:fill-box;transform-origin:left center;animation:remplir 1.4s cubic-bezier(.2,.7,.2,1) both}
-    .b1{animation-delay:.2s}.b2{animation-delay:.4s}.b3{animation-delay:.6s}.b4{animation-delay:.8s}
-    @keyframes remplir{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-    @keyframes pulse{0%,100%{fill-opacity:1}50%{fill-opacity:.3}}
-    @media (prefers-reduced-motion:reduce){.point,.barre{animation:none}}
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Spectrion Studio</title>
+  <desc id="desc">A dark geometric banner with a luminous faceted prism and the Spectrion Studio wordmark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080B17"/>
+      <stop offset="0.58" stop-color="#11182B"/>
+      <stop offset="1" stop-color="#090D1A"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B6CFF"/>
+      <stop offset="0.52" stop-color="#B09BFF"/>
+      <stop offset="1" stop-color="#60E6F0"/>
+    </linearGradient>
+    <linearGradient id="facetA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#5664C9" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="facetB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C6CF4" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#67E8F9" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7665ED" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#7665ED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#A5B4FC" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
 
-  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="#0c0c0d" stroke="#2a2a2d"/>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+  <path d="M0 236H1200" stroke="#A5B4FC" stroke-opacity=".12"/>
+  <path d="M0 237H470" stroke="url(#beam)" stroke-opacity=".65" stroke-width="1.5"/>
 
-  <!-- Bloc gauche : identité -->
-  <text class="eyebrow" x="64" y="76">BTS SIO · OPTION SLAM</text>
-  <text class="nom" x="64" y="154">Kylian Luangraj<tspan class="point" fill="#e8352f">.</tspan></text>
-  <text class="sous" x="64" y="200">Étudiant en développement d'applications</text>
-
-  <rect x="64" y="232" width="4" height="56" rx="2" fill="#e8352f"/>
-  <text class="accroche" x="84" y="257">Donner vie à mes idées</text>
-  <text class="accroche" x="84" y="283">à travers l'informatique.</text>
-
-  <!-- Séparateur -->
-  <line x1="730" y1="64" x2="730" y2="256" stroke="#2a2a2d"/>
-
-  <!-- Bloc droit : traits de personnalité, comme sur le portfolio -->
-  <g>
-    <text class="label" x="780" y="104">Curiosité</text>
-    <rect x="780" y="114" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
-    <rect class="barre b1" x="780" y="114" width="231" height="8" rx="4" fill="#e8352f"/>
-
-    <text class="label" x="780" y="156">Créativité</text>
-    <rect x="780" y="166" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
-    <rect class="barre b2" x="780" y="166" width="356" height="8" rx="4" fill="#e8352f"/>
-
-    <text class="label" x="780" y="208">Rigueur</text>
-    <rect x="780" y="218" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
-    <rect class="barre b3" x="780" y="218" width="303" height="8" rx="4" fill="#e8352f"/>
-
-    <text class="label" x="780" y="260">Travail d'équipe</text>
-    <rect x="780" y="270" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
-    <rect class="barre b4" x="780" y="270" width="338" height="8" rx="4" fill="#e8352f"/>
+  <g transform="translate(100 0)">
+    <text x="0" y="117" fill="#F5F6FF" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" letter-spacing="9">SPECTRION</text>
+    <text x="4" y="158" fill="#AEB9D5" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5">STUDIO  /  KYLIAN LUANGRAJ</text>
+    <rect x="4" y="190" width="42" height="2" rx="1" fill="url(#beam)"/>
+    <text x="58" y="196" fill="#7786A8" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3.2">CODE  ·  INTERACTIVE  ·  WORLDBUILDING</text>
   </g>
+
+  <g transform="translate(930 145)">
+    <circle r="142" fill="url(#glow)"/>
+    <circle r="100" fill="none" stroke="#8B9AC7" stroke-opacity=".16" stroke-width="1"/>
+    <circle r="124" fill="none" stroke="#8B9AC7" stroke-opacity=".10" stroke-width="1" stroke-dasharray="3 9"/>
+    <path d="M0-90 70-43 59 42 0 91-63 42-72-43Z" fill="#171D35" fill-opacity=".8" stroke="url(#beam)" stroke-width="2"/>
+    <path d="M0-90 0 0-72-43Z" fill="url(#facetA)"/>
+    <path d="M0-90 70-43 0 0Z" fill="#A78BFA" fill-opacity=".48"/>
+    <path d="M70-43 59 42 0 0Z" fill="url(#facetB)"/>
+    <path d="M59 42 0 91 0 0Z" fill="#6B71E8" fill-opacity=".38"/>
+    <path d="M0 91-63 42 0 0Z" fill="#7C6CF4" fill-opacity=".28"/>
+    <path d="M-63 42-72-43 0 0Z" fill="#67E8F9" fill-opacity=".2"/>
+    <path d="M0-90V91M-72-43 59 42M70-43-63 42" stroke="#D5D9FF" stroke-opacity=".48" stroke-width="1" fill="none"/>
+    <circle cx="0" cy="0" r="4" fill="#D9F9FF"/>
+    <circle cx="-108" cy="-58" r="3" fill="#8B6CFF"/>
+    <circle cx="104" cy="61" r="2.5" fill="#67E8F9"/>
+    <path d="M-152 0H-116M116 0H152M0-152V-116M0 116V152" stroke="url(#beam)" stroke-opacity=".55"/>
+  </g>
+
+  <text x="1140" y="270" text-anchor="end" fill="#657391" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2">IDÉES → INTERACTIONS</text>
 </svg>
