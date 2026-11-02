@@ -1,12 +1,23 @@
-<div align="center">
-  <img src="assets/spectrion-banner.svg" alt="Spectrion Studio — Kylian Luangraj" width="100%" />
-  <br />
-  <a href="https://spectrionstudio.github.io/portfolio/">PORTFOLIO</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/kylianluangraj/">LINKEDIN</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:kylian.luangraj@outlook.fr">CONTACT</a>
-</div>
+# Kylian Luangraj — Radar de compétences
+
+Bannière statique réalisée en HTML, CSS et SVG. Aucun JavaScript, framework ou dépendance.
+
+## Aperçu local
+Ouvre `index.html` dans un navigateur.
+
+## À propos des points
+Les six points sont provisoirement positionnés à 60 % sur chaque axe, uniquement pour construire la forme graphique. Ils ne représentent pas encore une auto-évaluation.
+
+Quand les niveaux seront décidés, il faudra déplacer les six sommets du polygone `.skill-shape` et les six cercles `.skill-point` / `.point-halo` dans le SVG.
+
+## Axes représentés
+1. Programmation
+2. Web et interfaces
+3. Bases de données
+4. Gestion de projet
+5. Outils et versioning
+6. Systèmes, réseaux et sécurité
+
 
 <br />
 
