@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="./assets/radar.svg" width="100%" alt="Kylian Luangraj — Banner">
+</p>
 
 
 # Kylian Luangraj — Radar de compétences
