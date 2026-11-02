@@ -5,13 +5,11 @@
 
 Bannière statique réalisée en HTML, CSS et SVG. Aucun JavaScript, framework ou dépendance.
 
-## Aperçu local
-Ouvre `index.html` dans un navigateur.
+## Aperçu local (à faire plus tard)
+Ouvre `index.html` dans un navigateur qui est la bannière ci-dessus mais interactive.
 
 ## À propos des points
-Les six points sont provisoirement positionnés à 60 % sur chaque axe, uniquement pour construire la forme graphique. Ils ne représentent pas encore une auto-évaluation.
-
-Quand les niveaux seront décidés, il faudra déplacer les six sommets du polygone `.skill-shape` et les six cercles `.skill-point` / `.point-halo` dans le SVG.
+Ces points représentent les grandes et principales catégories que l'on étudie dans notre BTS SIO SLAM. 
 
 ## Axes représentés
 1. Programmation
@@ -24,7 +22,7 @@ Quand les niveaux seront décidés, il faudra déplacer les six sommets du polyg
 
 <br />
 
-> Un bot qui a sa personnalité. Un site qui a son univers. Un jeu qui a ses propres règles. C’est le genre de projets qui me donne envie de coder.
+> Un bot qui a sa personnalité ? Un site qui a son univers ? Un jeu qui a ses propres règles ? C’est le genre de projets qui me donne envie de coder.
 
 Moi, c’est **Kylian**. Je suis étudiant en **BTS SIO — SLAM au CNED**. Je m’intéresse au développement d’applications, à l’interactivité et au game design.
 
