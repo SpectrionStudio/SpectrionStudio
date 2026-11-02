@@ -28,11 +28,11 @@ Ces points représentent les grandes et principales catégories que l'on étudie
 
 Moi, c’est **Kylian**. Je suis étudiant en **BTS SIO — SLAM au CNED**. Je m’intéresse au développement d’applications, à l’interactivité et au game design.
 
-<div align="center">
-  **STAGE EN DÉVELOPPEMENT** · 4 à 5 semaines · Mai — Août 2027
-</div>
+<p align="center">
+  <strong>RECHERCHE UN STAGE</strong><br>
+  <sub>WEB DEVELOPMENT · 4–5 SEMAINES · MAI — AOÛT 2027</sub>
+</p>
 
----
 
 ## Sur l’établi
 
@@ -94,7 +94,9 @@ J’écris un light novel et développe un univers narratif depuis plusieurs ann
 ---
 
 <div align="center">
-  **Une idée à construire ou un projet à discuter ?**
+  <p align="center">
+  <strong>Une idée à construire ou un projet à discuter ?</strong><br>
+</p>
   <br />
   <a href="mailto:kylian.luangraj@outlook.fr">ÉCRIS-MOI ↗</a>
   <br /><br />
