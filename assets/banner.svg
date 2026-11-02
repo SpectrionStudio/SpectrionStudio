@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="titre desc">
+  <title id="titre">Kylian Luangraj</title>
+  <desc id="desc">Étudiant en BTS SIO option SLAM, développement d'applications. Donner vie à mes idées à travers l'informatique.</desc>
+  <style>
+    text{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+    .eyebrow{font-size:16px;font-weight:600;letter-spacing:3px;fill:#e8352f}
+    .nom{font-size:68px;font-weight:700;letter-spacing:-1px;fill:#f1f0ee}
+    .sous{font-size:26px;fill:#8a8886}
+    .accroche{font-size:22px;fill:#f1f0ee}
+    .label{font-size:15px;fill:#8a8886}
+    .point{animation:pulse 2.6s ease-in-out infinite}
+    .barre{transform-box:fill-box;transform-origin:left center;animation:remplir 1.4s cubic-bezier(.2,.7,.2,1) both}
+    .b1{animation-delay:.2s}.b2{animation-delay:.4s}.b3{animation-delay:.6s}.b4{animation-delay:.8s}
+    @keyframes remplir{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes pulse{0%,100%{fill-opacity:1}50%{fill-opacity:.3}}
+    @media (prefers-reduced-motion:reduce){.point,.barre{animation:none}}
+  </style>
+
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="#0c0c0d" stroke="#2a2a2d"/>
+
+  <!-- Bloc gauche : identité -->
+  <text class="eyebrow" x="64" y="76">BTS SIO · OPTION SLAM</text>
+  <text class="nom" x="64" y="154">Kylian Luangraj<tspan class="point" fill="#e8352f">.</tspan></text>
+  <text class="sous" x="64" y="200">Étudiant en développement d'applications</text>
+
+  <rect x="64" y="232" width="4" height="56" rx="2" fill="#e8352f"/>
+  <text class="accroche" x="84" y="257">Donner vie à mes idées</text>
+  <text class="accroche" x="84" y="283">à travers l'informatique.</text>
+
+  <!-- Séparateur -->
+  <line x1="730" y1="64" x2="730" y2="256" stroke="#2a2a2d"/>
+
+  <!-- Bloc droit : traits de personnalité, comme sur le portfolio -->
+  <g>
+    <text class="label" x="780" y="104">Curiosité</text>
+    <rect x="780" y="114" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
+    <rect class="barre b1" x="780" y="114" width="231" height="8" rx="4" fill="#e8352f"/>
+
+    <text class="label" x="780" y="156">Créativité</text>
+    <rect x="780" y="166" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
+    <rect class="barre b2" x="780" y="166" width="356" height="8" rx="4" fill="#e8352f"/>
+
+    <text class="label" x="780" y="208">Rigueur</text>
+    <rect x="780" y="218" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
+    <rect class="barre b3" x="780" y="218" width="303" height="8" rx="4" fill="#e8352f"/>
+
+    <text class="label" x="780" y="260">Travail d'équipe</text>
+    <rect x="780" y="270" width="356" height="8" rx="4" fill="#17171a" stroke="#2a2a2d"/>
+    <rect class="barre b4" x="780" y="270" width="338" height="8" rx="4" fill="#e8352f"/>
+  </g>
+</svg>
