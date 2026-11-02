@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kylian Luangraj — Profil de compétences</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --grid: rgba(111, 132, 184, .10);
+    --text: #f1f3ff;
+    --muted: #9ba9cc;
+    --purple: #a58aff;
+    --cyan: #5be5f2;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 28px;
+    background: #070b15;
+    color: var(--text);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+  }
+
+  /* Bannière statique : aucune dépendance et aucun JavaScript. */
+  .banner {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: min(1200px, 100%);
+    min-height: 300px;
+    border: 1px solid rgba(139, 157, 211, .17);
+    border-radius: 18px;
+    background:
+      radial-gradient(ellipse at 80% 48%, rgba(77, 91, 171, .20), transparent 34%),
+      linear-gradient(115deg, #0d1325 0%, #0b1020 65%, #10172c 100%);
+    box-shadow: 0 24px 70px rgba(0,0,0,.38);
+  }
+
+  .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .55;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+
+  .banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 78%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(139,157,211,.28), transparent);
+  }
+
+  .content {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1.08fr;
+    align-items: center;
+    gap: 12px;
+    padding: 28px 42px 28px 58px;
+  }
+
+  .identity { min-width: 0; }
+
+  .eyebrow {
+    color: #8796bd;
+    font-size: 10px;
+    letter-spacing: .34em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 17px 0 10px;
+    color: var(--text);
+    font-size: clamp(35px, 4.5vw, 61px);
+    line-height: 1.04;
+    letter-spacing: .105em;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .subtitle {
+    color: #b3bfdc;
+    font-size: 12px;
+    letter-spacing: .27em;
+    text-transform: uppercase;
+  }
+
+  .accent {
+    width: 76px;
+    height: 2px;
+    margin: 25px 0 15px;
+    background: linear-gradient(90deg, var(--purple), var(--cyan));
+  }
+
+  .domains {
+    color: #8292b8;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+  }
+
+  .radar-wrap {
+    width: 100%;
+    max-width: 560px;
+    justify-self: end;
+  }
+
+  .radar {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .ring {
+    fill: none;
+    stroke: #64749f;
+    stroke-opacity: .36;
+    stroke-width: 1;
+  }
+
+  .axis {
+    stroke: #7d8db6;
+    stroke-opacity: .45;
+    stroke-width: 1;
+  }
+
+  .axis-label {
+    fill: #bdc9e8;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  .skill-shape {
+    fill: url(#radarFill);
+    stroke: url(#radarStroke);
+    stroke-width: 2;
+    stroke-linejoin: round;
+  }
+
+  .skill-point {
+    fill: #e9fdff;
+    stroke: #9c82ff;
+    stroke-width: 2;
+  }
+
+  .point-halo {
+    fill: #9b83ff;
+    opacity: .18;
+  }
+
+  .center-dot { fill: #dceaff; }
+
+  .footer {
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+    color: #7483a8;
+    font-size: 9px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 760px) {
+    body { padding: 12px; }
+    .content {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 30px 24px 40px;
+    }
+    h1 { font-size: clamp(30px, 8vw, 48px); }
+    .radar-wrap { max-width: 520px; justify-self: center; margin-top: 12px; }
+    .footer { right: 20px; bottom: 13px; }
+  }
+</style>
+</head>
+<body>
+  <main class="banner">
+    <div class="content">
+      <section class="identity">
+        <div class="eyebrow">Développement · Création · Exploration</div>
+        <h1>KYLIAN<br>LUANGRAJ</h1>
+        <div class="subtitle">Étudiant BTS SIO · Option SLAM</div>
+        <div class="accent"></div>
+        <div class="domains">
+          Programmation · Web · Données<br>
+          Projet · Outils · Systèmes
+        </div>
+      </section>
+
+      <section class="radar-wrap" aria-label="Diagramme radar des six domaines de compétences">
+        <!--
+          Les six points sont volontairement placés au même niveau provisoire.
+          Quand les valeurs seront définies, modifie les coordonnées du polygone
+          et des six cercles (0 à 100 % de la distance centre -> sommet).
+        -->
+        <svg class="radar" viewBox="0 0 560 390" role="img"
+             aria-label="Radar à six axes : programmation, web et interfaces, bases de données, gestion de projet, outils et versioning, systèmes réseaux et sécurité">
+          <defs>
+            <linearGradient id="radarFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#a58aff" stop-opacity=".43"/>
+              <stop offset="100%" stop-color="#55e4f1" stop-opacity=".24"/>
+            </linearGradient>
+            <linearGradient id="radarStroke" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#b18aff"/>
+              <stop offset="100%" stop-color="#5be5f2"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Grille hexagonale à cinq niveaux -->
+          <polygon class="ring" points="280,45 410,120 410,270 280,345 150,270 150,120"/>
+          <polygon class="ring" points="280,75 384,135 384,255 280,315 176,255 176,135"/>
+          <polygon class="ring" points="280,105 358,150 358,240 280,285 202,240 202,150"/>
+          <polygon class="ring" points="280,135 332,165 332,225 280,255 228,225 228,165"/>
+          <polygon class="ring" points="280,165 306,180 306,210 280,225 254,210 254,180"/>
+
+          <!-- Axes -->
+          <line class="axis" x1="280" y1="195" x2="280" y2="45"/>
+          <line class="axis" x1="280" y1="195" x2="410" y2="120"/>
+          <line class="axis" x1="280" y1="195" x2="410" y2="270"/>
+          <line class="axis" x1="280" y1="195" x2="280" y2="345"/>
+          <line class="axis" x1="280" y1="195" x2="150" y2="270"/>
+          <line class="axis" x1="280" y1="195" x2="150" y2="120"/>
+
+          <!-- Forme provisoire : chaque axe est à 60 % en attendant les vraies valeurs -->
+          <polygon class="skill-shape"
+            points="280,105 358,150 358,240 280,285 202,240 202,150"/>
+
+          <!-- Points de données -->
+          <circle class="point-halo" cx="280" cy="105" r="10"/>
+          <circle class="point-halo" cx="358" cy="150" r="10"/>
+          <circle class="point-halo" cx="358" cy="240" r="10"/>
+          <circle class="point-halo" cx="280" cy="285" r="10"/>
+          <circle class="point-halo" cx="202" cy="240" r="10"/>
+          <circle class="point-halo" cx="202" cy="150" r="10"/>
+          <circle class="skill-point" cx="280" cy="105" r="4.5"/>
+          <circle class="skill-point" cx="358" cy="150" r="4.5"/>
+          <circle class="skill-point" cx="358" cy="240" r="4.5"/>
+          <circle class="skill-point" cx="280" cy="285" r="4.5"/>
+          <circle class="skill-point" cx="202" cy="240" r="4.5"/>
+          <circle class="skill-point" cx="202" cy="150" r="4.5"/>
+          <circle class="center-dot" cx="280" cy="195" r="3"/>
+
+          <!-- Libellés des axes -->
+          <text class="axis-label" x="280" y="23" text-anchor="middle">PROGRAMMATION</text>
+
+          <text class="axis-label" x="430" y="111" text-anchor="start">
+            <tspan x="430" dy="0">WEB &amp;</tspan>
+            <tspan x="430" dy="13">INTERFACES</tspan>
+          </text>
+
+          <text class="axis-label" x="430" y="273" text-anchor="start">
+            <tspan x="430" dy="0">BASES DE</tspan>
+            <tspan x="430" dy="13">DONNÉES</tspan>
+          </text>
+
+          <text class="axis-label" x="280" y="372" text-anchor="middle">GESTION DE PROJET</text>
+
+          <text class="axis-label" x="130" y="273" text-anchor="end">
+            <tspan x="130" dy="0">OUTILS &amp;</tspan>
+            <tspan x="130" dy="13">VERSIONING</tspan>
+          </text>
+
+          <text class="axis-label" x="130" y="111" text-anchor="end">
+            <tspan x="130" dy="0">SYSTÈMES, RÉSEAUX</tspan>
+            <tspan x="130" dy="13">&amp; SÉCURITÉ</tspan>
+          </text>
+        </svg>
+      </section>
+    </div>
+    <div class="footer">Profil de compétences · En construction</div>
+  </main>
+</body>
+</html>
